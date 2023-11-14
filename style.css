@@ -14,7 +14,7 @@ body {
 }
 .navbar ul {
 
-    
+
     list-style: none;
     padding: 0;
     margin: 0;
@@ -22,6 +22,8 @@ body {
     justify-content: center;
 }
 .navbar ul li {
+
+    
     text-align: start;
     padding: 0 10px;
     ;
