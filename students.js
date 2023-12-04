@@ -12,7 +12,7 @@ export class Student {
 export function displayStudents() {
   const students = getStudents();
   const contentDiv = document.getElementById('main-content');
-  contentDiv.innerHTML = `<h1>Schülerverwaltung</h1>
+  contentDiv.innerHTML = `<h1>Stundetsmanagment</h1>
                           <button id="add-student-btn">add Student</button>
                           <div id="student-list">${students.map(student =>
                             `<div class="student-card">
@@ -32,7 +32,7 @@ export function displayStudents() {
   });
 }
 
-export function addStudent() {
+export function addStudent()  {
   const name = prompt('Name of the Student:');
   const grade = prompt('Mark of the Student:');
   if (name && grade) {
