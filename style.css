@@ -23,7 +23,7 @@ body {
 }
 .navbar ul li {
 
-    
+
     text-align: start;
     padding: 0 10px;
     ;
@@ -70,9 +70,9 @@ body {
     bottom: 0%;
     width: 100%;
     background-color: #6e6c6c;
-    
+
   }
-  
+
   .footer2 span + span {
     margin-left: 40px;
   }
@@ -80,5 +80,3 @@ body {
     text-decoration: none;
     color: #353333;
   }
-
-  
