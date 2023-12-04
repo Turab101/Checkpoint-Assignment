@@ -79,7 +79,7 @@ export function deleteStudent(id)  {
 
 
 
-export function getStudents() {
+export function getStudents()  {
   const students = JSON.parse(localStorage.getItem('students')) || [];
   return students.map(student => new Student(student.id, student.name, student.grade));
 }
