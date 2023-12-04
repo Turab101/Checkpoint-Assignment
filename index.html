@@ -1,60 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-
-
-    <div class="navbar">
-
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Classes</a></li>
-          <li><a href="#">Teachers</a></li>
-          <li><a href="#">Students</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LMS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#" data-page="home">Home</a>
+        <a class="nav-link" href="#" data-page="classes">Classes</a>
+        <a class="nav-link" href="#" data-page="teachers">Teachers</a>
+        <a class="nav-link" href="#" data-page="students">Students</a>
       </div>
-      
-      <div class="welcome">
-        <h1>Welcome Turab</h1>
-      </div>
-      
-      
-      <div class="list-container">
-        <div class="list">
-          <h3></h3>
-          <p>number of students</p>
-        </div>
-        <div class="list">
-          <h3></h3>
-          <p>number of teachers</p>
-        </div>
-        <div class="list">
-          <h3></h3>
-          <p>number of classes</p>
-        </div>
-      </div>
-      
-      
-      <div class="footer">
-        <h2>HiCoder 23/24 LMS</h2>
-        <p>This is a wider list with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      
-      <div class="footer2">
-          <span><a href="#">About us</a></span>
-          <span ><a href="#">Contact</a></span>
-          </div>
+    </div>
+  </div>
+</nav>
 
+<div class="welcome">
+  <h1>Welcome to LMS</h1>
+</div>
 
+<div id="main-content" class="container mt-4">
+  <div class="list-container">
+    <div id="student-count" class="list">
+      <h3>Students</h3>
+      <p>Number of students: 0</p>
+    </div>
+    <div id="teacher-count" class="list">
+      <h3>Teachers</h3>
+      <p>Number of teachers: 0</p>
+    </div>
+    <div id="class-count" class="list">
+      <h3>Classes</h3>
+      <p>Number of classes: 0</p>
+    </div>
+  </div>
+</div>
 
+<footer class="footer">
+  <h2>HiCoder 23/24 LMS</h2>
+  <p>This is a wider list with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+</footer>
 
-    <script type="module" src="./script.js"></script>
+<footer class="footer2">
+  <span><a href="#">About us</a></span>
+  <span><a href="#">Contact</a></span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="script.js"></script>
+
 </body>
 </html>
