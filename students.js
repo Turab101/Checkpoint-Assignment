@@ -44,7 +44,7 @@ export function addStudent()  {
   }
 }
 
-export function editStudent(id) {
+export function editStudent(id)  {
   let students = getStudents();
   const student = students.find(s => s.id === parseInt(id));
 
