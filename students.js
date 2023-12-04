@@ -64,7 +64,7 @@ export function editStudent(id)  {
 }
 
 
-export function deleteStudent(id) {
+export function deleteStudent(id)  {
   let students = getStudents();
   students = students.filter(student => student.id !== parseInt(id));
   localStorage.setItem('students', JSON.stringify(students));
