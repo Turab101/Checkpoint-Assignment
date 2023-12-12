@@ -9,6 +9,8 @@ export class Student {
 
 
 
+
+
 export function displayStudents() {
   const students = getStudents();
   const contentDiv = document.getElementById('main-content');
