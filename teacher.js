@@ -9,6 +9,9 @@ export class Teacher {
   }
 }
 
+
+
+
 export function getTeachers() {
   return JSON.parse(localStorage.getItem('teachers') || '[]');
 }
