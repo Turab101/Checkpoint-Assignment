@@ -47,6 +47,11 @@ export function displayTeachers() {
   });
 }
 
+
+
+
+
+
 export function addTeacher() {
   const existingModal = document.getElementById('addTeacherModal');
   if (existingModal) {
