@@ -1,60 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-
-
-    <div class="navbar">
-
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Classes</a></li>
-          <li><a href="#">Teachers</a></li>
-          <li><a href="#">Students</a></li>
-        </ul>
-      </div>
-      
-      <div class="welcome">
-        <h1>Welcome Turab</h1>
-      </div>
-      
-      
-      <div class="list-container">
-        <div class="list">
-          <h3></h3>
-          <p>number of students</p>
-        </div>
-        <div class="list">
-          <h3></h3>
-          <p>number of teachers</p>
-        </div>
-        <div class="list">
-          <h3></h3>
-          <p>number of classes</p>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">LMS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#" data-page="home">Home</a>
+          <a class="nav-link" href="#" data-page="classes">Classes</a>
+          <a class="nav-link" href="#" data-page="teachers">Teachers</a>
+          <a class="nav-link" href="#" data-page="students">Students</a>
         </div>
       </div>
-      
-      
-      <div class="footer">
-        <h2>HiCoder 23/24 LMS</h2>
-        <p>This is a wider list with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      
-      <div class="footer2">
-          <span><a href="#">About us</a></span>
-          <span ><a href="#">Contact</a></span>
-          </div>
+    </div>
+  </nav>
+  
+  
+  
+  <div id="main-content" class="container mt-4">
+    
+  </div>
+  
+  <footer class="footer">
+    <h2>HiCoder 23/24 LMS</h2>
+    <p>This is a wider list with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  </footer>
+  
+  <footer class="footer2">
+    <span><a href="#">About us</a></span>
+    <span><a href="#">Contact</a></span>
+  </footer>
+  
 
+  <div id="app"></div>
+  <div id="main-content" class="container mt-4"></div>
 
+  <script type="module" src="Design.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="script.js"></script>
 
-
-    <script type="module" src="./script.js"></script>
 </body>
 </html>
