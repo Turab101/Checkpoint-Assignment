@@ -17,7 +17,7 @@ export class Class {
   
 
 
-  
+
   export function displayClasses() {
     const classes = getClasses();
     const contentDiv = document.getElementById('main-content');
@@ -54,6 +54,8 @@ export class Class {
       });
     });
   }
+  
+
   
   export function addClass() 
    {
