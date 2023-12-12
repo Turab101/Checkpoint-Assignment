@@ -10,10 +10,13 @@ export class Class {
   }
   
 
-  
+
   export function getClasses() {
     return JSON.parse(localStorage.getItem('classes') || '[]');
   }
+  
+
+
   
   export function displayClasses() {
     const classes = getClasses();
