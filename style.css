@@ -80,3 +80,14 @@ body {
     text-decoration: none;
     color: #353333;
   }
+  #main-content {
+    min-height: 150vh; 
+    overflow-y: auto; 
+  }
+  
+  footer {
+    position: relative;
+    width: 100%;
+    clear: both; 
+  }
+  
