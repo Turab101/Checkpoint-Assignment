@@ -4,6 +4,9 @@ import { displayTeachers, addTeacher, editTeacher, deleteTeacher, getTeachers } 
 import { displayStudents, addStudent,editStudent, deleteStudent, getStudents } from "./students.js";
 
 
+
+
+
 export function updateCounts() {
     const studentsCount = document.getElementById('students-count');
     const teachersCount = document.getElementById('teachers-count');
