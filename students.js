@@ -50,6 +50,8 @@ export function displayStudents() {
   });
 }
 
+
+
 export function addStudent() {
   const existingModal = document.getElementById('addStudentModal');
   if (existingModal) {
