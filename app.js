@@ -30,6 +30,8 @@ window.onload = function() {
     });
 }
 
+
+
 function loadPageContent(page) {
     const mainContent = document.getElementById('main-content');
 
