@@ -129,6 +129,7 @@ export function addTeacher() {
 
 
 
+
 export function editTeacher(id) {
   let teachers = getTeachers();
   const teacher = teachers.find(t => t.id === parseInt(id));
