@@ -124,7 +124,7 @@ export class Class {
 
       }
   
-      
+
   
   export function editClass(id) {
     let classes = getClasses(); 
@@ -146,6 +146,8 @@ export class Class {
 
     }
   }
+  
+
   
   export function deleteClass(id) {
     let classes = getClasses();
