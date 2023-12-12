@@ -16,6 +16,10 @@ export function getTeachers() {
   return JSON.parse(localStorage.getItem('teachers') || '[]');
 }
 
+
+
+
+
 export function displayTeachers() {
   const teachers = getTeachers();
   const contentDiv = document.getElementById('main-content');
