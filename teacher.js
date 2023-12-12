@@ -151,6 +151,9 @@ export function editTeacher(id) {
   }
 }
 
+
+
+
 export function deleteTeacher(id) {
   let teachers = getTeachers();
   teachers = teachers.filter(teacher => teacher.id !== parseInt(id));
