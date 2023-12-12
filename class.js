@@ -56,7 +56,8 @@ export class Class {
   }
   
 
-  
+
+
   export function addClass() 
    {
         const modalElement = document.createElement('div');
@@ -123,6 +124,7 @@ export class Class {
 
       }
   
+      
   
   export function editClass(id) {
     let classes = getClasses(); 
