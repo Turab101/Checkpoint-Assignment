@@ -13,6 +13,8 @@ body {
 
 }
 .navbar ul {
+
+
     list-style: none;
     padding: 0;
     margin: 0;
@@ -20,6 +22,8 @@ body {
     justify-content: center;
 }
 .navbar ul li {
+
+
     text-align: start;
     padding: 0 10px;
     ;
@@ -66,9 +70,9 @@ body {
     bottom: 0%;
     width: 100%;
     background-color: #6e6c6c;
-    
+
   }
-  
+
   .footer2 span + span {
     margin-left: 40px;
   }
@@ -76,5 +80,14 @@ body {
     text-decoration: none;
     color: #353333;
   }
-
+  #main-content {
+    min-height: 150vh; 
+    overflow-y: auto; 
+  }
+  
+  footer {
+    position: relative;
+    width: 100%;
+    clear: both; 
+  }
   
