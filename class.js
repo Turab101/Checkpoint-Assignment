@@ -1,7 +1,9 @@
-import {updateCounts} from "./script.js";
+import {updateCounts} from "./app.js";
+import { classesData } from './data.js';
+ 
 
 
-export class Class {
+ class Class {
     constructor(id, name, teacherId) {
       this.id = id;
       this.name = name;
@@ -24,6 +26,7 @@ export class Class {
     contentDiv.innerHTML = `
       <h1 class="text-center my-4">Class Management</h1>
       <div class="row" id="class-list">
+      ${classesData.content}
         ${classes.map(cls => `
           <div class="col-md-4 mb-4">
             <div class="card">
@@ -148,7 +151,7 @@ export class Class {
   }
   
 
-  
+
   export function deleteClass(id) {
     let classes = getClasses();
     const updatedClasses = classes.filter(cls => cls.id !== parseInt(id));

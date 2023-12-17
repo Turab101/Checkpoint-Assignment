@@ -2,21 +2,36 @@
 import { displayClasses, addClass, editClass, deleteClass, getClasses } from "./class.js";
 import { displayTeachers, addTeacher, editTeacher, deleteTeacher, getTeachers } from "./teacher.js";
 import { displayStudents, addStudent,editStudent, deleteStudent, getStudents } from "./students.js";
-
-
+import { studentsData,teachersData,classesData } from "./data.js"
 
 
 
 export function updateCounts() {
-    const studentsCount = document.getElementById('students-count');
-    const teachersCount = document.getElementById('teachers-count');
-    const classesCount = document.getElementById('classes-count');
-  
-    studentsCount.textContent = `Number of students: ${getStudents().length}`;
-    teachersCount.textContent = `Number of teachers: ${getTeachers().length}`;
-    classesCount.textContent = `Number of classes: ${getClasses().length}`;
-  }
-  
+  const studentsCountElement = document.getElementById('students-count');
+  const teachersCountElement = document.getElementById('teachers-count');
+  const classesCountElement = document.getElementById('classes-count');
+
+  const studentStaticCount = (studentsData.content.match(/<div class="col-md-4 mb-4">/g) || []).length;
+  const teacherStaticCount = (teachersData.content.match(/<div class="col-md-4 mb-4">/g) || []).length;
+  const classStaticCount = (classesData.content.match(/<div class="col-md-4 mb-4">/g) || []).length;
+
+  const studentsFromLocalStorage = JSON.parse(localStorage.getItem('students')) || [];
+  const teachersFromLocalStorage = JSON.parse(localStorage.getItem('teachers')) || [];
+  const classesFromLocalStorage = JSON.parse(localStorage.getItem('classes')) || [];
+
+  const totalStudentsCount = studentsFromLocalStorage.length + studentStaticCount;
+  const totalTeachersCount = teachersFromLocalStorage.length + teacherStaticCount;
+  const totalClassesCount = classesFromLocalStorage.length + classStaticCount;
+
+  studentsCountElement.textContent = ` Number of students: ${totalStudentsCount}`;
+  teachersCountElement.textContent = ` Number of teachers: ${totalTeachersCount}`;
+  classesCountElement.textContent = ` Number of classes ${totalClassesCount}`;
+
+  localStorage.setItem('totalStudentsCount', totalStudentsCount);
+  localStorage.setItem('totalTeachersCount', totalTeachersCount);
+  localStorage.setItem('totalClassesCount', totalClassesCount);
+}
+
   
 window.onload = function() {
     const navLinks = document.querySelectorAll('.nav-link');

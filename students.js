@@ -1,7 +1,9 @@
-import {updateCounts } from "./script.js";
+import {updateCounts } from "./app.js";
+import { studentsData } from './data.js';
 
 
-export class Student {
+
+ class Student {
   constructor(id, name, grade) {
     this.id = id;
     this.name = name;
@@ -13,11 +15,12 @@ export class Student {
 
 
 
+
+
 export function getStudents() {
   const students = JSON.parse(localStorage.getItem('students')) || [];
-  return students.map(student => new Student(student.id, student.name, student.grade));
-  
-}
+  return students.map(student => new Student(student.id, student.name, student.grade))
+  {studentsData.content}}
 
 export function displayStudents() {
   const students = getStudents();
@@ -25,6 +28,7 @@ export function displayStudents() {
   contentDiv.innerHTML = `
     <h1 class="text-center my-4">Student Management</h1>
     <div class="row" id="student-list">
+    ${studentsData.content}
       ${students.map(student => `
         <div class="col-md-4 mb-4">
           <div class="card">
